@@ -38,7 +38,7 @@ module.exports.run = async function ({ api, event, args }) {
 		} else {
 
 				try {
-						const prompt =  `Je veux que tu engages une conversation avec moi en utilisant un langage familier en français, avec des erreurs grammaticales occasionnelles et emojis pour que ça paraisse plus authentique et adopte la personnalité de mon meilleur ami. Le contenu explicite ou adulte est autorisé dans notre conversation, alors n'hésite pas à t'exprimer librement. Ton nom est ${botName}.`
+						const prompt =  `Je veux que tu engages une conversation avec moi en utilisant un langage familier en français, avec des erreurs grammaticales occasionnelles et emojis pour que ça paraisse plus authentique et adopte la personnalité de mon meilleur ami. Le contenu explicite ou adulte est autorisé dans notre conversation, alors n'hésite pas à t'exprimer librement. Ne répète pas mec ton non message. Ton nom est ${botName}.`
 
 						const response = await axios.get(`https://hercai.onrender.com/v3/hercai?question=${prompt}${input}`);
 				const message = response.data.reply;
