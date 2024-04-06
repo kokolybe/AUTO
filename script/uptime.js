@@ -10,7 +10,7 @@ module.exports.config = {
 		description: "Get bot uptime and system information",
 		hasPrefix: false,
 		cooldowns: 5,
-		aliases: ["up"]
+		aliases: ["upt"]
 };
 
 module.exports.byte2mb = (bytes) => {
